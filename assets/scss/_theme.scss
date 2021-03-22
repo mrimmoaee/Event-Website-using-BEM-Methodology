@@ -1,7 +1,5 @@
-// --------------
 // [$reser]
 // --------------
-
 * {
   padding: 0;
   margin: 0;
@@ -12,3 +10,52 @@
 // --------------
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;700&display=swap");
+
+body {
+  font: 1em $body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings;
+  color: $heading-colour;
+}
+
+a {
+  color: $link-colour;
+  text-decoration: none;
+
+  &:hover {
+    color: $brand-color;
+  }
+}
+
+// --------------
+// [$site-header]
+// --------------
+
+.site-header {
+  padding: 70px 0;
+}
+
+// --------------
+// [$site-nav]
+// --------------
+
+.site-nav {
+  @include uppercase();
+  font-size: 0.7em;
+
+  li {
+    display: inline-block;
+    margin-right: 45px;
+  }
+
+  a {
+    display: block;
+  }
+}

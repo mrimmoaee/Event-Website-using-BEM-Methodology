@@ -41,13 +41,16 @@ $breakpoint-large: 60em; // 960px
   }
 
   @media only screen and (min-width: $breakpoint-large) {
-    width: 75%;
-    max-width: 60rem;
+    max-width: 1200px;
   }
 }
 
 .row {
   width: 100%;
+}
+
+.row--centered {
+  align-items: center;
 }
 
 .row [class^="col"] {
