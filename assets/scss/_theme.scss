@@ -9,7 +9,7 @@
 // [$fonts]
 // --------------
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;700&display=swap");
 
 body {
   font: 1em $body;
@@ -77,9 +77,6 @@ img {
 // --------------
 // [$info-block]
 // --------------
-
-// .info-block {
-// }
 
 .info-block__title {
   margin-bottom: 20px;
@@ -151,31 +148,77 @@ img {
 }
 
 // --------------
+// [$quote]
+// --------------
+
+.quote {
+  text-align: center;
+  margin: 0 auto 30px auto;
+
+  &:after {
+    content: "";
+    display: block;
+    background-color: $brand-color;
+    width: 2px;
+    height: 100px;
+    margin: 30px auto 0 auto;
+  }
+}
+
+.quote__body {
+  font-family: $headings;
+  color: $heading-colour;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.quote__name {
+  @include uppercase();
+  font-family: normal;
+  font-size: 0.7rem;
+  color: $heading-colour;
+  display: block;
+  margin-top: 20px;
+}
+
+// --------------
+// [$showcase]
+// --------------
+
+.showcase {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.showcase--bigger {
+  width: 70%;
+  margin-top: 40px;
+  margin-left: -7%;
+}
+
+.showcase__body {
+  margin-top: 70px;
+}
+
+// --------------
 // [$hero]
 // --------------
 
-// .hero {
-//   position: relative;
-// }
-
-// .hero__text {
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   width: 40%;
-// }
-
-// .hero__img {
-//   text-align: right;
-
-//   img {
-//     width: 85%;
-//   }
-// }
+.hero {
+  margin-bottom: 50px;
+}
 
 // --------------
 // [$media query]
 // --------------
+
+@media (min-width: 500px) {
+  .showcase__body {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+}
 
 @media screen and (min-width: 720px) {
   .site-nav,
@@ -191,6 +234,7 @@ img {
 @media screen and (min-width: 800px) {
   .hero {
     position: relative;
+    margin-bottom: 150px;
   }
 
   .hero__text {
@@ -210,5 +254,9 @@ img {
 
   .info-block__title {
     text-align: left;
+  }
+
+  .quote {
+    width: 50%;
   }
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;700&display=swap");
 .left {
   text-align: left; }
 
@@ -15,6 +15,9 @@
 
 .hidden-sm {
   display: none; }
+
+.d-flex {
+  display: flex; }
 
 .container {
   width: 90%;
@@ -225,6 +228,53 @@ img {
   .info-block__cta a {
     border-bottom: 2px solid #5da8ef; }
 
+.quote {
+  text-align: center;
+  margin: 0 auto 30px auto; }
+  .quote:after {
+    content: "";
+    display: block;
+    background-color: #5da8ef;
+    width: 2px;
+    height: 100px;
+    margin: 30px auto 0 auto; }
+
+.quote__body {
+  font-family: "Playfair Display", serif;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 300; }
+
+.quote__name {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-weight: bold;
+  font-family: normal;
+  font-size: 0.7rem;
+  color: #333;
+  display: block;
+  margin-top: 20px; }
+
+.showcase {
+  width: 50%;
+  margin-bottom: 50px; }
+
+.showcase--bigger {
+  width: 70%;
+  margin-top: 40px;
+  margin-left: -7%; }
+
+.showcase__body {
+  margin-top: 70px; }
+
+.hero {
+  margin-bottom: 50px; }
+
+@media (min-width: 500px) {
+  .showcase__body {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 20px; } }
 @media screen and (min-width: 720px) {
   .site-nav,
   .site-logo {
@@ -234,7 +284,8 @@ img {
     margin-bottom: 0; } }
 @media screen and (min-width: 800px) {
   .hero {
-    position: relative; }
+    position: relative;
+    margin-bottom: 150px; }
 
   .hero__text {
     position: absolute;
@@ -248,6 +299,9 @@ img {
       width: 85%; }
 
   .info-block__title {
-    text-align: left; } }
+    text-align: left; }
+
+  .quote {
+    width: 50%; } }
 
 /*# sourceMappingURL=screen.css.map */
